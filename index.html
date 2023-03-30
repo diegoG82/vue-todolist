@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- vueJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <main>
+        <div class="wrapper">
+          <h1>ToDoList!!!</h1>
+
+          <div class="new-todo">
+            <input
+              type="text"
+              placeholder="Task To Do"
+              v-model="newTodos.text" />
+            <button class="add-btn" @click="addTodo">ADD</button>
+          </div>
+
+          <ul class="todo-list">
+            <!-- // MILESTONE 1
+            // Stampare all'interno di una lista, un item per ogni todo.
+            // Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato. -->
+
+            <li
+              v-for="(todo, index) in tasksToDo"
+              :class="todo.done ? 'done' : ''">
+              <p>{{ todo.text }}</p>
+            </li>
+          </ul>
+         
+        </div>
+      </main>
+    </div>
+
+    <!-- script js  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

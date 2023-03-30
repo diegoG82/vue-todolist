@@ -1,0 +1,60 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* COMMON */
+
+/* TODOS */
+main {
+  margin-top: 4rem;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 400px;
+  border: 5px solid green;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  padding-top: 2rem;
+}
+
+.new-todo {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+
+.add-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-list li {
+  text-align: center;
+
+  padding: 1rem;
+}
+
+.done {
+  text-decoration: line-through;
+  color: green;
+}
